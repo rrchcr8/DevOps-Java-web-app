@@ -10,7 +10,7 @@ pipeline {
 
      stage('Validate code quality') {
                steps {
-                   sh "./gradlew sonarqube \
+                   sh ./gradlew sonarqube \
                        -Dsonar.projectKey=rrchcr8_DevOps-Java-web-app \
                        -Dsonar.organization=rrchcr8-github \
                        -Dsonar.host.url=https://sonarcloud.io \
