@@ -1,4 +1,4 @@
-FROM frekele/ant
+FROM openjdk:8
 RUN echo "Java with ant image started"
 
 RUN mkdir /data
