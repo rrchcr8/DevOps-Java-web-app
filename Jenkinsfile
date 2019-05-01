@@ -3,7 +3,7 @@ pipeline {
       dockerfile {
          args '--entrypoint=\'\''
       }
-
+   }
     stages {
       stage('Build') {
           steps {

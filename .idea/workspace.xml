@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77e45337-5314-4720-96e5-357513006b40" name="Default Changelist" comment="Jenkinsfile modified">
+    <list default="true" id="77e45337-5314-4720-96e5-357513006b40" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10-rc-2/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10-rc-2/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10-rc-2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10-rc-2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10-rc-2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10-rc-2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10-rc-2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10-rc-2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -63,24 +68,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="45" selection-start-line="16" selection-start-column="24" selection-end-line="20" selection-end-column="77" />
+            <state relative-caret-position="60">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3735" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -144,8 +147,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/result.jsp" />
         <option value="$PROJECT_DIR$/Jenkinsfileinit" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/Jenkinsfile" />
       </list>
     </option>
   </component>
@@ -233,8 +236,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,6 +304,7 @@
       <updated>1556724835778</updated>
       <workItem from="1556724842008" duration="4612000" />
       <workItem from="1556729729278" duration="9366000" />
+      <workItem from="1556751132861" duration="590000" />
     </task>
     <task id="LOCAL-00001" summary="jenkinsfile added">
       <created>1556731292869</created>
@@ -414,17 +418,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556749522976</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="agent {&#10;        dockerfile {&#10;            args '--entrypoint=\'\''&#10;        }">
+      <created>1556751593302</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1556751593302</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13978000" />
+    <option name="totallyTimeSpent" value="14568000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1366" height="713" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962063" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25341427" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -485,7 +496,8 @@
     <MESSAGE value="from changed  from docker file" />
     <MESSAGE value="docker file modified" />
     <MESSAGE value="Jenkinsfile modified" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jenkinsfile modified" />
+    <MESSAGE value="agent {&#10;        dockerfile {&#10;            args '--entrypoint=\'\''&#10;        }" />
+    <option name="LAST_COMMIT_MESSAGE" value="agent {&#10;        dockerfile {&#10;            args '--entrypoint=\'\''&#10;        }" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.3-bin/31t79e2qsceia4mkbojplrgx/gradle-4.10.3/lib/gradle-core-api-4.10.3.jar!/org/gradle/api/artifacts/dsl/RepositoryHandler.class">
@@ -505,6 +517,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfileinit" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/settings.gradle">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -517,6 +537,19 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/result.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,46 +565,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/result.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="3" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sonar-project.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfileinit">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3735" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="45" selection-start-line="16" selection-start-column="24" selection-end-line="20" selection-end-column="77" />
+        <state relative-caret-position="60">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
