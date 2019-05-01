@@ -1,23 +1,12 @@
-FROM ubuntu
-# Install OpenJDK-8
-RUN apt-get update && \
-    apt-get install -y openjdk-8-jdk && \
-    apt-get install -y ant && \
-    apt-get clean;
+FROM frekele/ant
+RUN echo "Java with ant image started"
 
-# Fix certificate issues
-RUN apt-get update && \
-    apt-get install ca-certificates-java && \
-    apt-get clean && \
-    update-ca-certificates -f;
-
-# Setup JAVA_HOME -- useful for docker commandline
-ENV JAVA_HOME /usr/lib/jvm/java-8-openjdk-amd64/
-RUN export JAVA_HOME
-
-#do image configuration
-RUN /bin/bash -c 'echo This is an example'
-ENV myCustomEnvVar="This is env example" \
-    otherEnvVar="Thi is also env example"
 RUN mkdir /data
 COPY . /data/
+RUN echo "copied all files"
+
+USER root
+RUN whoami
+RUN ls -la /data/**
+
+CMD [ "sh", "-c", "service ssh start; bash"]
