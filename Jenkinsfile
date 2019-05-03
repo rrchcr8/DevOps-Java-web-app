@@ -1,21 +1,10 @@
 pipeline {
-
    agent {
       dockerfile {
          args '--entrypoint=\'\''
       }
    }
-
     stages {
-
-      agent {
-            dockerfile {
-               args '--entrypoint=\'\''
-            }
-         }
-
-
-
       stage('Build') {
           steps {
               sh "./gradlew build"
@@ -32,30 +21,15 @@ pipeline {
                }
            }
 
+      stage('Package') {
+          steps {
+              sh "./gradlew war"
+          }
        }
       stage('Deploy') {
           steps {
               sh "./gradlew appRun"
           }
       }
-
-       stage('Run on Master') {
-                   steps {
-                       sh 'uname -a'
-                       sh 'pwd'
-                       sh 'ls -la /tmp'
-                   }
-               }
-
-        post {
-                always {
-                    sh 'touch build/test-results/*.xml'
-                    junit 'build/test-results/*.xml'
-                }
-                success {
-                    archiveArtifacts artifacts: 'build/**/*.jar', fingerprint: true
-                }
-            }
-
-
     }
+}
