@@ -14,7 +14,7 @@ import java.io.StringWriter;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
-public class Test {
+public class LicorStoreTest {
 
     @Mock private HttpServletRequest request;
     @Mock private HttpServletResponse response;
@@ -25,24 +25,13 @@ public class Test {
         MockitoAnnotations.initMocks(this);
     }
 
-    @Test
-    public void doGet() throws Exception {
-        StringWriter stringWriter = new StringWriter();
-        PrintWriter printWriter = new PrintWriter(stringWriter);
-
-        when(response.getWriter()).thenReturn(printWriter);
-
-        new HelloServlet().doGet(request, response);
-
-        assertEquals("Hello, World!", stringWriter.toString());
-    }
 
     @Test
     public void doPostWithoutName() throws Exception {
         when(request.getRequestDispatcher("response.jsp"))
                 .thenReturn(requestDispatcher);
 
-        new HelloServlet().doPost(request, response);
+        new SelectLiquorServlet().doPost(request, response);
 
         verify(request).setAttribute("user", "World");
         verify(requestDispatcher).forward(request,response);
@@ -54,7 +43,7 @@ public class Test {
         when(request.getRequestDispatcher("response.jsp"))
                 .thenReturn(requestDispatcher);
 
-        new HelloServlet().doPost(request, response);
+        new SelectLiquorServlet().doPost(request, response);
 
         verify(request).setAttribute("user", "Dolly");
         verify(requestDispatcher).forward(request,response);
