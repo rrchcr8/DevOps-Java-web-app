@@ -29,7 +29,7 @@ public class LicorStoreTest {
     @Test
     public void helloWorld () {
     String expected= "Hello world";
-        assertEquals(expected, "Hello");
+        assertEquals(expected, "Hello world");
     }
         //    @Test
 //    public void doPostWithoutName() throws Exception {
