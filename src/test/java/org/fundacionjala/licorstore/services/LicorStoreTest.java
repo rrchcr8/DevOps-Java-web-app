@@ -27,26 +27,31 @@ public class LicorStoreTest {
 
 
     @Test
-    public void doPostWithoutName() throws Exception {
-        when(request.getRequestDispatcher("response.jsp"))
-                .thenReturn(requestDispatcher);
-
-        new SelectLiquorServlet().doPost(request, response);
-
-        verify(request).setAttribute("user", "World");
-        verify(requestDispatcher).forward(request,response);
+    public void helloWorld () {
+    String expected= "Hello world";
+        assertEquals(expected, "Hello");
     }
+        //    @Test
+//    public void doPostWithoutName() throws Exception {
+//        when(request.getRequestDispatcher("response.jsp"))
+//                .thenReturn(requestDispatcher);
+//
+//        new SelectLiquorServlet().doPost(request, response);
+//
+//        verify(request).setAttribute("user", "World");
+//        verify(requestDispatcher).forward(request,response);
+//    }
 
-    @Test
-    public void doPostWithName() throws Exception {
-        when(request.getParameter("name")).thenReturn("Dolly");
-        when(request.getRequestDispatcher("response.jsp"))
-                .thenReturn(requestDispatcher);
-
-        new SelectLiquorServlet().doPost(request, response);
-
-        verify(request).setAttribute("user", "Dolly");
-        verify(requestDispatcher).forward(request,response);
-    }
+//    @Test
+//    public void doPostWithName() throws Exception {
+//        when(request.getParameter("name")).thenReturn("Dolly");
+//        when(request.getRequestDispatcher("response.jsp"))
+//                .thenReturn(requestDispatcher);
+//
+//        new SelectLiquorServlet().doPost(request, response);
+//
+//        verify(request).setAttribute("user", "Dolly");
+//        verify(requestDispatcher).forward(request,response);
+//    }
 
 }
