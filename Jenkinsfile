@@ -20,16 +20,7 @@ pipeline {
                        -Dsonar.login=bc664ce2731513c418938ec1007365c6215447ae"
                }
            }
-      stage('Test') {
-          steps {
-              sh "./gradlew test"
-          }
-      }
-      stage('Package') {
-          steps {
-              sh "./gradlew war"
-          }
-       }
+
       stage('Deploy') {
           steps {
               sh "./gradlew appRun"
