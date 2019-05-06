@@ -8,27 +8,33 @@ import org.mockito.MockitoAnnotations;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.PrintWriter;
-import java.io.StringWriter;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.*;
 
+/**
+ * this will contains unit tests.
+ */
 public class LicorStoreTest {
 
     @Mock private HttpServletRequest request;
     @Mock private HttpServletResponse response;
     @Mock private RequestDispatcher requestDispatcher;
 
+    /**
+     *
+     * @throws Exception mockito annotations.
+     */
     @Before
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
     }
 
-
+    /**
+     * this is a hello world test(not a real one).
+     */
     @Test
-    public void helloWorld () {
-    String expected= "Hello world";
+    public void helloWorld() {
+    String expected = "Hello world";
         assertEquals(expected, "Hello world");
     }
         //    @Test

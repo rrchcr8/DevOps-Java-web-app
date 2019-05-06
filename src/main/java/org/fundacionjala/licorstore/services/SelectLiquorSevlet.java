@@ -11,7 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-
+/**
+ * This is an injection of dependencies.
+ */
 @WebServlet(
         name = "selectliquorservlet",
         urlPatterns = "/SelectLiquor"
@@ -19,7 +21,8 @@ import java.util.List;
 class SelectLiquorServlet extends HttpServlet {
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(final HttpServletRequest req, final HttpServletResponse resp)
+            throws ServletException, IOException {
 
         String liquorType = req.getParameter("Type");
 

@@ -10,23 +10,27 @@ import java.util.List;
  * This is a service.
  */
 public class LiquorService {
-
-    public List getAvailableBrands(LiquorType type){
+    /**
+     *
+     * @param type it's a type of liquor.
+     * @return details of the product.
+     */
+    public List getAvailableBrands(final LiquorType type) {
 
         List brands = new ArrayList();
 
-        if(type.equals(LiquorType.WINE)){
+        if (type.equals(LiquorType.WINE)) {
             brands.add("Adrianna Vineyard");
             brands.add(("J. P. Chenet"));
 
-        }else if(type.equals(LiquorType.WHISKY)){
+        } else if (type.equals(LiquorType.WHISKY)) {
             brands.add("Glenfiddich");
             brands.add("Johnnie Walker");
 
-        }else if(type.equals(LiquorType.BEER)){
+        } else if (type.equals(LiquorType.BEER)) {
             brands.add("Corona");
 
-        }else {
+        } else {
             brands.add("No Brand Available, local production");
         }
         return brands;
