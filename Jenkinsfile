@@ -48,7 +48,7 @@ pipeline {
 		}
         stage('GUI tests') {
 			steps {
-                git clone https://github.com/rrchcr8/DevOps-Java-web-app.git
+                git clone https://github.com/rrchcr8/GUI-automation-for-DevOps.git
                 ./gradlew executeFeatures
             }
         }
