@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state relative-caret-position="390">
+              <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -255,7 +255,7 @@
       <workItem from="1556724842008" duration="4612000" />
       <workItem from="1556729729278" duration="9366000" />
       <workItem from="1556751132861" duration="590000" />
-      <workItem from="1557100912737" duration="2981000" />
+      <workItem from="1557100912737" duration="3863000" />
     </task>
     <task id="LOCAL-00001" summary="jenkinsfile added">
       <created>1556731292869</created>
@@ -460,11 +460,32 @@
       <option name="project" value="LOCAL" />
       <updated>1557144807829</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="GUI automation repository added">
+      <created>1557145107030</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1557145107030</updated>
+    </task>
+    <task id="LOCAL-00031" summary="GUI automation repository added">
+      <created>1557145232422</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1557145232422</updated>
+    </task>
+    <task id="LOCAL-00032" summary="GUI automation repository added">
+      <created>1557145434340</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1557145434341</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25939000" />
+    <option name="totallyTimeSpent" value="26821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="28" width="1366" height="713" extended-state="6" />
@@ -540,7 +561,8 @@
     <MESSAGE value="until this point it should be running" />
     <MESSAGE value="deleted redoundant steps" />
     <MESSAGE value="jenkinsfile modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="jenkinsfile modification" />
+    <MESSAGE value="GUI automation repository added" />
+    <option name="LAST_COMMIT_MESSAGE" value="GUI automation repository added" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://$USER_HOME$/.gradle/wrapper/dists/gradle-4.10.3-bin/31t79e2qsceia4mkbojplrgx/gradle-4.10.3/lib/gradle-core-api-4.10.3.jar!/org/gradle/api/artifacts/dsl/RepositoryHandler.class">
@@ -635,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Jenkinsfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+        <state relative-caret-position="390">
+          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
         </state>
       </provider>
     </entry>

@@ -49,7 +49,7 @@ pipeline {
         stage('GUI tests') {
 			steps {
                 sh "git clone https://github.com/rrchcr8/GUI-automation-for-DevOps.git"
-                ./gradlew executeFeatures
+                sh "./gradlew executeFeatures"
             }
         }
     }
