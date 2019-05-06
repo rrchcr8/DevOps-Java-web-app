@@ -48,7 +48,7 @@ pipeline {
 		}
         stage('GUI tests') {
 			steps {
-                git clone fdsfsfe
+                git clone https://github.com/rrchcr8/DevOps-Java-web-app.git
                 ./gradlew executeFeatures
             }
         }
