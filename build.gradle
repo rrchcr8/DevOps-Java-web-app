@@ -3,6 +3,11 @@ plugins {
     id 'war'
     id 'org.gretty' version '2.2.0'
     id 'org.sonarqube' version '2.7'
+    // Apply the checkstyle and jacoco plugin for add code quality checkers
+    //based on Marines Project.
+    id 'checkstyle'
+    id 'jacoco'
+
 }
 
 group 'fundacionJala'
@@ -28,4 +33,23 @@ dependencies {
     testCompile group: 'org.mockito', name: 'mockito-core', version :'2.7.19'
     testCompile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.3.0'
     testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
+}
+
+// Checkstyle configuration
+checkstyle {
+    toolVersion = '8.19'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+check.dependsOn jacocoTestReport
+
+test {
+    testLogging {
+        events 'PASSED', 'STARTED', 'FAILED', 'SKIPPED'
+    }
 }
