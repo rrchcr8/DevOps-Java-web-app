@@ -15,7 +15,7 @@ pipeline {
                        sh "./gradlew build"
                      }
                    }
-                    /*stage('Validate code quality') {
+                    stage('Validate code quality') {
                        steps {
                            sh "./gradlew sonarqube \
                            -Dsonar.projectKey=rrchcr8_DevOps-Java-web-app \
@@ -23,7 +23,7 @@ pipeline {
                            -Dsonar.host.url=https://sonarcloud.io \
                            -Dsonar.login=bc664ce2731513c418938ec1007365c6215447ae"
                      }
-                   }*/
+                   }
              }
              post {
                  always {
