@@ -38,13 +38,13 @@ pipeline {
                 allowMissing: false,
                 alwaysLinkToLastBuild: false,
                 keepAll: true,
-                reportDir: 'data/build/reports/tests/',
+                reportDir: 'build/reports/tests/',
                 reportFiles: 'index.html',
                 reportName: 'Unit Test Report'
             ]
         }
         success {
-            archiveArtifacts "data/build/libs/*.war"
+            archiveArtifacts "build/libs/*.war"
         }
     }
 }
