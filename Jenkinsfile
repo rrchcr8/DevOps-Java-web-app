@@ -15,7 +15,7 @@ pipeline {
                        sh "./gradlew build"
                      }
                    }
-                   /* stage('Validate code quality') {
+                    stage('Validate code quality') {
                        steps {
                            sh "./gradlew sonarqube \
                            -Dsonar.projectKey=rrchcr8_DevOps-Java-web-app \
@@ -23,7 +23,7 @@ pipeline {
                            -Dsonar.host.url=https://sonarcloud.io \
                            -Dsonar.login=bc664ce2731513c418938ec1007365c6215447ae"
                      }
-                   } */
+                   }
              }
              post {
                  always {
@@ -43,15 +43,10 @@ pipeline {
          }
          stage('Deploy') {
            steps {
-               sh "docker build -t tomcat_for_gui_tests:1.1 -f DockerfileProduction ."
+               sh "docker build -t tomcat_for_gui_tests:1.1 -f DockerFileProduction ."
                sh "docker run --rm -d -p 8888:8080 tomcat_for_gui_tests:1.1"
            }
          }
-         /*stage('GUI tests') {
-             steps {
-                 sh "git clone https://github.com/88mary256/helloPage-selenium-tests.git"
-                 sh "./gradlew executeFeatures"
-             }
-         }*/
+
      }
  }
